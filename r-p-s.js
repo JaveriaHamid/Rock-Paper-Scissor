@@ -35,12 +35,10 @@ function pScores(){
 function userSelection(userChoice){ 
 
   userChoiceDisplay.innerHTML = `<img src= "${data[userChoice]}">`;
-  userChoiceDisplay.style.transform = 'rotate(90deg)';
 
     const cpuChoice = generateComputerChoice();
     console.log(data[cpuChoice]);
     computerChoiceDisplay.innerHTML = `<img src= "${data[cpuChoice]}">`;
-    computerChoiceDisplay.style.transform = 'rotate(-90deg) rotateY(180deg)';
  
     getResult(userChoice, cpuChoice);
 
