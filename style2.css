@@ -72,7 +72,6 @@ h1 {
     margin: 0px;
     margin-inline: 12px;
     font-size: 1.7em;
-    font-size: 2em;
 }
 
 .options {
@@ -137,10 +136,58 @@ h1 {
     background-color: rgb(60, 197, 83);
 }
 
-@media screen and (max-width: 445px){
+@media screen and (max-width: 410px){
     .title{
         text-align: center;
         font-size: 1.9rem;
        }
+       .user-choice > img{
+           max-width: 135px;
+       }
+       .computer-choice > img{
+           max-width: 135px;
+       }
+       .user-choice{
+           padding-right: 15px;
+       }
+       .computer-choice{
+           padding-left: 15px;
+       }
+       .user-choice{
+           margin-right: 0px;
+       } 
+       .computer-choice{
+           margin-left: 0px;
+       }
+       .choices{
+          flex: 1 1 200px;
+       }
+       .points{
+        margin-top: 20px;
+       }
+       .points h3{
+          font-size: 17px;
+       }
+       .p-score{
+          margin-left: 25px;
+          font-size: 1.5em;
+       }
+       .c-score{
+          margin-right: 25px;
+          font-size: 1.5em;
+       }
+        .colon {
+          margin: 0px;
+          margin-inline: 12px;
+          font-size: 1.5em;
+       }
+        .options{
+            margin-top: 90px;
+        }
+        .options img{
+            height: 60px;
+        }
+        .options > div {
+            min-width: 98px;
+        }
 }
-
