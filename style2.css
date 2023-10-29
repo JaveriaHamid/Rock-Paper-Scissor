@@ -185,9 +185,12 @@ h1 {
             margin-top: 90px;
         }
         .options img{
-            height: 60px;
+            height: 65px;
         }
         .options > div {
-            min-width: 98px;
+            min-width: 110px;
+        }
+        .result{
+            font-size: 3em;
         }
 }
