@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <section class="game">
+       <div class="title">
+         <h1>Rock Paper Scissor</h1>
+       </div>
+
+       <div class="choices">
+           <div class="user-choice"></div>
+           <div class="computer-choice"></div>
+       </div>
+
+       <div class="points">
+         <h3 class="player">PLAYER</h3>
+   
+          <div class="scores">
+             <span class="p-score">0</span>
+             <span class="colon">:</span>
+             <span class="c-score">0</span>
+          </div>
+
+          <h3 class="cpu">COMPUTER</h3>
+       </div>
+
+       <div class="moves">Moves Left: 10</div>
+
+       <div class="options">
+          <div class="option" id="rock" onclick="userSelection('rock')">
+             <img src="images/rock.png" alt="r">
+          </div> 
+          <div class="option" id="paper" onclick="userSelection('paper')">
+             <img src="images/paper.png" alt="p">
+          </div>
+          <div class="option" id="scissor" onclick="userSelection('scissor')">
+             <img src="images/scissor.png" alt="s">
+          </div>
+       </div>
+
+       <div class="result"></div>
+       <button class="play-again"></button>
+      
+   </section>
+
+    <script src="r-p-s.js"></script>
+</body>
+</html>

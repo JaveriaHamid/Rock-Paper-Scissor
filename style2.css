@@ -1,0 +1,149 @@
+body {
+    background: #614dbe;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+/*.game  div, button {
+    padding: 10px;
+}*/
+
+h1 {
+    display: block;
+    margin: auto;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.user-choice{
+    margin-right: 50px;
+}
+
+.computer-choice{
+    margin-left: 50px;
+}
+
+.points {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.points h3 {
+    font-size: 1.7em;
+}
+
+.scores{
+    display: flex;
+    align-items: center;
+}
+
+.p-score{
+    margin-left: 60px;
+    font-size: 2em;
+}
+
+.c-score{
+    margin-right: 60px;
+    font-size: 2em;
+}
+
+.colon {
+    margin: 0px;
+    margin-inline: 12px;
+    font-size: 1.7em;
+    font-size: 2em;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.options > div {
+    min-width: 200px;
+}
+
+/*scissor > img{
+    transform: rotate(-95deg);
+}
+
+#scissor > img:hover {
+    box-shadow: -3px 3px 2px 2px rgb(41, 41, 39);
+}*/
+
+.options img {
+    color: blue;
+    height: 120px;
+    border: 2px solid darkblue;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+.options img:hover {
+    border: 1px solid rgb(63, 62, 57);
+    box-shadow: 3px 3px 2px 2px rgb(41, 41, 39);
+    transition: 0.4s;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    background-color: rgb(247, 221, 73);
+}
+
+.moves {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    color: rgb(240, 231, 220);
+}
+
+.result{
+    margin-top: 30px;
+}
+
+.play-again {
+    display: none;
+    padding: 20px 18px;
+    font-size: 3em;
+    border: none;
+    border-radius: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.play-again:hover{
+    box-shadow: 18px 10px 10px 2px rgb(71 59 55);
+    transition: 0.4s;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    background-color: rgb(60, 197, 83);
+}
+
+@media screen and (max-width: 445px){
+    .title{
+        text-align: center;
+        font-size: 1.9rem;
+       }
+}
+
