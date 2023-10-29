@@ -98,13 +98,12 @@ function gameOver(playerScore, cpuScore){
     movesLeftDisplay.style.color= 'aliceblue';
 
     if(playerScore === cpuScore){
-    resultDisplay.style.fontSize = '2rem';
+    resultDisplay.style.fontSize = '3em';
     resultDisplay.innerText = "It's a Draw!";
-    resultDisplay.style.color = "white";
+    resultDisplay.style.color = "#3fffb8";
     }
 
     if(playerScore > cpuScore){
-      resultDisplay.style.fontSize = '5em';
       resultDisplay.style.letterSpacing = '1px';
       resultDisplay.innerText = 'YOU WIN :)';
       resultDisplay.style.color = "#2ad32a";
@@ -112,7 +111,6 @@ function gameOver(playerScore, cpuScore){
     }
 
     else if(playerScore < cpuScore){
-      resultDisplay.style.fontSize = '5em';
       resultDisplay.style.letterSpacing = '1px';
       resultDisplay.innerText = 'YOU LOSE :(';
       resultDisplay.style.color = "#ff0000";
