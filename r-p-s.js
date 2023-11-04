@@ -60,7 +60,6 @@ function generateComputerChoice(){
 function getResult(userChoice, cpuChoice){
 
   if(userChoice === cpuChoice){
-      draw();
   }
 
   else if(userChoice == 'rock'){
@@ -90,16 +89,20 @@ function getResult(userChoice, cpuChoice){
 
 function gameOver(playerScore, cpuScore){   
 
+    var pixel = window.matchMedia("(max-width: 480px)");
+
     movesLeftDisplay.innerText = 'none';
     movesLeftDisplay.innerText = '-- Game Over --';
-    movesLeftDisplay.style.fontSize= '3em';
-    movesLeftDisplay.style.letterSpacing= '3px';
+
+    movesLeftDisplay.style.fontSize= (pixel.matches) ? '2.2em' : '3em';
+    movesLeftDisplay.style.letterSpacing= (pixel.matches) ? '2px' : '3px';
+    
     movesLeftDisplay.style.fontFamily= 'cursive';
     movesLeftDisplay.style.color= 'aliceblue';
 
     if(playerScore === cpuScore){
     resultDisplay.style.fontSize = '3em';
-    resultDisplay.innerText = "It's a Draw!";
+    resultDisplay.innerText = "It's a Draw!"; 
     resultDisplay.style.color = "#3fffb8";
     }
 
